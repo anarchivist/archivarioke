@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DH Dream Karaoke</title>
+  <title>Archivarioke!</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Orbitron:700,400' rel='stylesheet' type='text/css'> 
+  <link href='http://fonts.googleapis.com/css?family=Lora:700,400' rel='stylesheet' type='text/css'> 
   <style media="screen">
-html, body {
+html, body, p, ol, ul, td {
   color: #444;
-  font-family: 'Orbitron', verdana, arial, helvetica, sans-serif;
+  font-family: 'Lora', palatino, 'Times New Roman', serif;
   font-size: 14px;
   line-height: 22px;
   height:100%;
-  background-image:url('http://nowviskie.org/images/mic.jpg');
+  background-image:url('/corner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom right;  }
 a {
-  color: #000; }
+  color: #939; }
 a:visited {
-    color: #000; }
+    color: #939; }
 a:hover {
-  color: #A80000;
+  color: #c6c;
   background-color: #fff;
 }
 h1 a {
@@ -46,12 +46,12 @@ h1 a {
 .search {
   position: absolute;
   top: 0;
-  right: 1em;
+  left: 1em;
 }
 .footer {
   position: absolute;
   bottom: 0;
-  right: 1em;
+  left: 1em;
 }
 .pagination {
   background: #f1f1f1;
@@ -86,7 +86,7 @@ h1 a {
   <div class="container">
 
 <%= yield %>
-<div class="footer"><p><em>(Get the <a href="http://github.com/nowviskie/Suggestitron">code</a>.)</em></p></div>
+<div class="footer"><p><em>Code @ <a href="http://github.com/anarchivist/archivarioke">Github</a>. Based on <a href="http://github.com/nowviskie/Suggestitron">Suggestitron.</a> </em></p></div>
 </div> 
 </body>
 </html>

@@ -2,19 +2,19 @@
       <div class="search">
       <%= form_tag request.path, :method => 'get' do %>
       <% content_tag :label do %>
-    Singer:
+    Search for singer:
     <%= text_field_tag :search, params[:search] %>
   <% end %>
 <% end %>
 </div>
 <h2>It's time to play...</h2>
-<h1><%= link_to 'Digital Humanities Dream Karaoke!', topics_path %></h1>
+<h1><%= link_to 'Archivarioke!', topics_path %></h1>
 
 <p></p>
 
 <table>
   <tr>
-    <th>This esteemed DHer...</th>
+    <th>This esteemed archivist...</th>
     <th>Should sing...</th>
     <th><span class="heart">&#x2665;</span></th>
   </tr>
@@ -35,5 +35,5 @@
 
 
 
-<p><em>Happy Holidays from your friends at the <a href="http://scholarslab.org"><img src="http://nowviskie.org/images/slab-logo.png" align="center"/></a></em></p>
+
 </div>
